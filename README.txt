@@ -1,29 +1,29 @@
-    This project is about analyzing the relative
+The purpose of this project is to analyze the relative
 movements of depth gauges in the Great Lakes over time.
-These movements occur due to the uneven movement of the
-earths crust. Specifically, we are interested in how water
-levels from a Master Gauge that has existed since 1860 differ
+These depth gauges are constanly rising/sinking over time
+due to movements in the earths crust, however they don't all
+shift at the same rate. For this project specifically, we are interested in how water
+level readings from a Master Gauge that was built in 1860 differ
 from the lakewide average water level taken from a collection 
-of many other gauges built after 1920. If we can find a
-pattern in how the Master Gauge compares to the lakewide
-average after 1920, then we can extrapolate that pattern
-back to 1860 accounting for errors in the Master Gauge.
+of many other gauges built after 1920. Then by finding a linear
+relationship in the difference between the Master Gauge and the lakewide
+average after 1920, we can extrapolate that relationship
+back to 1860 and use the Master Gauge data to more accuratly "predict" 
+the actual water levels between 1860 and 1920.
 
-Lake_plot.pdf (outdated):
-    This plots the monthly mean water level
-data for the gauges and the difference between the 
-master gauge and the lakewide average for each month. 
-This graph is very noisy due to cycles in water level
-over a year, so Lake_monthly_plot is much more useful.
+extrapolated_yearly_water_levels contains the results of this analysis 
+for each of the Great Lakes (Michigan and Huron are counted as 1 lake).
+This provides lake water level data in a yearly format.
 
-Lake_monthly_plot.pdf:
-    This splits up each months water levels and plots
-the difference between the master gauge and lakewide
-average. 
+monthly_plots plots the difference between the Master Gauge and the 
+Lakewide Average split across each month. In the future, these will be
+used to provide extrapolated water level data in a monthly format instead of
+yearly (each month must be treated independently from the others due to 
+seasonal differences in rainfall, ice cover, etc). 
 
-Lake_Yearly_plot.pdf:
-    This takes the yearly average water levels instead
-of the monthly. Also, this plot contains a linear regression
-model with a prediction interval, and the extrapolated values
-for lakewide average water levels before 1920. Eventually this
-model will be created for each month of Lake_monthly_plot as well. 
+erie_monthly_plots plots the difference between several gauges all 
+around the lake against the lakewide average. I wanted to visualize 
+this after noticing that some gauges were consistently above/below
+the lakewide average during the winter months, suggesting a seasonal 
+"tilting" of Lake Erie. This has never been scientifically documented 
+before and my team hopes to eventually publish a paper on this subject. 
